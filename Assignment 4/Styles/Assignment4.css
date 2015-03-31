@@ -1,0 +1,19 @@
+.areas{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 0px;
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    height: 130px;
+    margin-left: 10px;
+    visibility: hidden;
+}
+.dropDownSection{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    height: 130px;
+    border-radius: 4px;
+}
