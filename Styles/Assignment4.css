@@ -40,17 +40,10 @@ body{
     height: auto;
     width: 100%;
     display: none;
-    -webkit-transition: opacity 2s ease-in;
-    -moz-transition: opacity 2s ease-in;
-    -o-transition: opacity 2s ease-in;
-    -ms-transition: opacity 2s ease-in;
-    transition: opacity 2s ease-in;
+    -webkit-transform: translate3d(0,0,0);
     overflow: hidden;
     position: relative;
     background-color: #7E8F7C;
-}
-#area1Wrapper.fadeIn{
-    opacity: 1;
 }
 .areas{
     overflow: auto;
