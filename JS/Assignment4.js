@@ -9,12 +9,12 @@ $(document).ready(function(){
         
         else if(selectedIndex == "1"){
             $("#area2Wrapper").toggle(false);
-            $("#area1Wrapper").slideToggle("slow");
+            $("#area1Wrapper").toggle(true);
         }
         
         else if(selectedIndex == "2"){
             $("#area1Wrapper").toggle(false);
-            $("#area2Wrapper").slideToggle("slow");
+            $("#area2Wrapper").toggle(true);
         }
     });
 });
