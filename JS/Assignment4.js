@@ -5,36 +5,57 @@ $(document).ready(function(){
         
         if (selectedIndex == "0") {
             if ($("#area1Wrapper").css("display") != "none"){
-                $("#area1Wrapper").fadeOut("fast");
+                $("#area1Wrapper").fadeOut("medium");
             }
             else if ($("#area2Wrapper").css("display") != "none") {
-                $("#area2Wrapper").fadeOut("fast");
+                $("#area2Wrapper").fadeOut("medium");
             }    
         }
         
         else if(selectedIndex == "1"){
             if ($("#area2Wrapper").css("display") != "none"){
-                $("#area2Wrapper").fadeOut("fast",function(){
+                $("#area2Wrapper").fadeOut("medium",function(){
                     $("#area1").show();
-                    $("#area1Wrapper").fadeIn("fast").css({"display": "inline-block"});
+                    //Run this code if height has the inherit property -- for mobile
+                    if ($("#area1Wrapper").css("height") == "inherit") {
+                        $("#area1Wrapper").fadeIn("medium").css({"display": "block"});
+                    }
+                    else{
+                        $("#area1Wrapper").fadeIn("medium").css({"display": "inline-block"});   
+                    }
                 });
             }
             else{
                 $("#area1").show();
-                $("#area1Wrapper").fadeIn("fast").css({"display": "inline-block"});
+                if ($("#area1Wrapper").css("height") == "inherit") {
+                        $("#area1Wrapper").fadeIn("medium").css({"display": "block"});
+                    }
+                else{
+                        $("#area1Wrapper").fadeIn("medium").css({"display": "inline-block"});   
+                    }
             }
         }
         
         else if(selectedIndex == "2"){
             if ($("#area1Wrapper").css("display") != "none"){
-                 $("#area1Wrapper").fadeOut("fast",function(){
+                 $("#area1Wrapper").fadeOut("medium",function(){
                     $("#area2").show();
-                    $("#area2Wrapper").fadeIn("fast").css({"display": "inline-block"});
+                    if ($("#area2Wrapper").css("height") == "inherit") {
+                        $("#area2Wrapper").fadeIn("medium").css({"display": "block"});
+                    }
+                    else{
+                        $("#area2Wrapper").fadeIn("medium").css({"display": "inline-block"});   
+                    }
                  });
             }
             else{
                 $("#area2").show();
-                $("#area2Wrapper").fadeIn("fast").css({"display": "inline-block"});
+                if ($("#area1Wrapper").css("height") == "inherit") {
+                        $("#area1Wrapper").fadeIn("medium").css({"display": "block"});
+                    }
+                    else{
+                        $("#area1Wrapper").fadeIn("medium").css({"display": "inline-block"});   
+                    }
             }
         }
     });

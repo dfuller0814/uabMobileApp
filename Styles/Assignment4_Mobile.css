@@ -1,0 +1,8 @@
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+    body{
+        font-family: sans-serif;
+        background-color: #FDF3E7;
+        color: black;
+        width: 100%;
+    }
+}
