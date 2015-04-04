@@ -4,36 +4,36 @@ $(document).ready(function(){
         
         if (selectedIndex == "0") {
             if ($("#area1Wrapper").css("display") != "none"){
-                $("#area1Wrapper").fadeOut("slow");
+                $("#area1Wrapper").fadeOut();
             }
             else if ($("#area2Wrapper").css("display") != "none") {
-                $("#area2Wrapper").fadeOut("slow");
+                $("#area2Wrapper").fadeOut();
             }    
         }
         
         else if(selectedIndex == "1"){
             if ($("#area2Wrapper").css("display") != "none"){
-                $("#area2Wrapper").fadeOut("slow",function(){
+                $("#area2Wrapper").fadeOut(function(){
                     $("#area1").show();
-                    $("#area1Wrapper").fadeIn("slow");
+                    $("#area1Wrapper").fadeIn();
                 });
             }
             else{
                 $("#area1").show();
-                $("#area1Wrapper").fadeIn("slow");
+                $("#area1Wrapper").fadeIn();
             }
         }
         
         else if(selectedIndex == "2"){
             if ($("#area1Wrapper").css("display") != "none"){
-                 $("#area1Wrapper").fadeOut("slow",function(){
+                 $("#area1Wrapper").fadeOut(function(){
                     $("#area2").show();
-                    $("#area2Wrapper").fadeIn("slow");
+                    $("#area2Wrapper").fadeIn();
                  });
             }
             else{
                 $("#area2").show();
-                $("#area2Wrapper").fadeIn("slow");
+                $("#area2Wrapper").fadeIn();
             }
         }
     });
